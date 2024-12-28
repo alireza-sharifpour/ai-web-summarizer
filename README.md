@@ -71,6 +71,3 @@ Adjust settings in `config.py` to customize:
 2. Create a feature branch
 3. Submit a pull request
 
-## License
-
-[Add your license information here]
