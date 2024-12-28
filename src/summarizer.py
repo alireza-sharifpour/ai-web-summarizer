@@ -11,7 +11,7 @@ class WebSummarizer:
         self.client = OpenAI(base_url=OLLAMA_BASE_URL, api_key=OLLAMA_API_KEY)
 
     def summarize_website(self, url):
-        response = requests.get(url, proxies={"http": None, "https": None})
+        response = requests.get(url)
         soup = BeautifulSoup(response.text, 'html.parser')
         text = ' '.join([p.get_text() for p in soup.find_all('p')])
 
