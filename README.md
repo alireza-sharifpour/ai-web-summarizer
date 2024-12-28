@@ -1,6 +1,26 @@
 # Text Summarization Project
 
-A Python project for text summarization.
+A Python-based text summarization project that leverages modern NLP techniques for generating concise summaries of text content.
+
+## Features
+
+- Text summarization using state-of-the-art models
+- Support for multiple AI backends (Ollama, OpenAI)
+- Configurable summarization parameters
+- Utility functions for text processing
+
+## Project Structure
+
+```
+.
+├── src/
+│   ├── __init__.py
+│   ├── main.py          # Application entry point
+│   ├── summarizer.py    # Core summarization logic
+├── config.py            # Configuration settings
+├── requirements.txt     # Project dependencies
+└── README.md           # Project documentation
+```
 
 ## Setup
 
@@ -19,14 +39,38 @@ source venv/bin/activate  # On Unix/macOS
 pip install -r requirements.txt
 ```
 
-## Project Structure
+## Dependencies
 
-- `src/`: Main source code
-- `tests/`: Unit tests
-- `requirements.txt`: Project dependencies
+Key dependencies include:
 
-## Running Tests
+- `ollama`: For local AI model integration
+- `openai`: For OpenAI API integration
+- `pydantic`: For data validation
+- `httpx`: For HTTP requests
+- `beautifulsoup4`: For text processing
+
+## Usage
+
+Run the main application:
 
 ```bash
-pytest tests/
+python src/main.py
 ```
+
+## Configuration
+
+Adjust settings in `config.py` to customize:
+
+- Model parameters
+- API endpoints
+- Summarization options
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+## License
+
+[Add your license information here]
